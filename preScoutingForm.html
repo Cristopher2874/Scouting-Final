@@ -67,18 +67,9 @@
     <div class="row"> 
       <!--blog posts container-->
       <div class="col-md-offset-3 col-md-6 page-block">
-        <h1>Pre Scouting</h1>
-        <h1>Datos generales</h1>
+        <h2>Pre Scouting</h2>
             <form style="padding-bottom:80px">
-              <h3>Pre-Match</h3>
-                <div class="form-group">
-                    <label for="soul"><b>Alma en pena</b></label>
-                    <input type="text" class="form-control" placeholder="Name" id="soul">
-                </div>
-                <div class="form-group">
-                    <label for="match"><b>Match</b></label>
-                    <input type="text" class="form-control" placeholder="Match" id="match">
-                </div>
+              <h4>Datos generales</h4>
                 <div class="form-group">
                     <label for="team"><b>Team Number</b></label>
                     <input type="text" class="form-control" id="team" placeholder="0000">
@@ -88,156 +79,92 @@
                   <input type="text" class="form-control" id="teamName" placeholder="HuasTek">
               </div>
               <br>
-          <h3>Auto</h3>
-          <div class="form-group">
-            <label><b>Starting Position</b></label>
-            <p>
-              <input type="radio"  id="radio1" value="1" name="position">
-              <label> 1 </label>
-              <input type="radio"  id="radio2" value="2" name="position">
-              <label> 2 </label>
-              <input type="radio"  id="radio3" value="3" name="position">
-              <label> 3 </label>
-              </p>
-        </div>
-          <b>UPPER</b>
-            <div>
-              <button class="btn btn-success" type="button" id="b1">-</button>
-              <b id="autoLabel1">0</b>
-              <button class="btn btn-success" type="button" id="b2">+</button>
-            </div>
-          <br/>
-          <b>LOWER</b>
-            <div>
-              <button class="btn btn-success" type="button" id="b3">-</button>
-              <b id="autoLabel2">0</b>
-              <button class="btn btn-success" type="button" id="b4">+</button>  
-            </div>
-          <br/>
-          <b>FALLAS UPPER</b>
-            <div>
-              <button class="btn btn-success" type="button" id="b5">-</button>
-              <b id="autoLabel3">0</b>
-              <button class="btn btn-success" type="button" id="b6">+</button>  
-            </div>
-          <br/>
-          <b>FALLAS LOWER</b>
-            <div>
-              <button class="btn btn-success" type="button" id="b7">-</button>
-              <b id="autoLabel4">0</b>
-              <button class="btn btn-success" type="button" id="b8">+</button>  
-            </div>
-          <br/>
+          <h4>Tareas</h4>
           <div class="checkbox checkbox-success">
             <input type="checkbox" value="0" id="cruzaLinea">
-            <label id="cruza"> Cruza línea:</label>
+            <label id="cruza">Recoge del piso</label>
           </div>
-          <br>
-          <h3>TeleOp</h3>
-            <b>UPPER</b>
-              <div>
-                <button class="btn btn-success" type="button" id="b9">-</button>
-                <b id="teleOpLabel1">0</b>
-                <button class="btn btn-success" type="button" id="b10">+</button>  
-              </div>
-            <br/>
-            <b>LOWER</b>
-              <div>
-                <button class="btn btn-success" type="button" id="b11">-</button>
-                <b id="teleOpLabel2">0</b>
-                <button class="btn btn-success" type="button" id="b12">+</button>  
-              </div>
-            <br/>
-            <b>FALLAS UPPER</b>
-              <div>
-                <button class="btn btn-success" type="button" id="b13">-</button>
-                <b id="teleOpLabel3">0</b>
-                <button class="btn btn-success" type="button" id="b14">+</button>
-              </div>
-            <br/>
-            <b>FALLAS LOWER</b>
-              <div>
-                <button class="btn btn-success" type="button" id="b15">-</button>
-                <b id="teleOpLabel4">0</b>
-                <button class="btn btn-success" type="button" id="b16">+</button>  
-              </div>
-              <br>
-        <h3>EndGame</h3>
+          <div class="checkbox checkbox-success">
+            <input type="checkbox" value="0" id="cruzaLinea">
+            <label id="cruza">Dispara arriba</label>
+          </div>
+          <div class="checkbox checkbox-success">
+            <input type="checkbox" value="0" id="cruzaLinea">
+            <label id="cruza">Dispara abajo</label>
+          </div>
           <div class="form-group">
-              <b>BARRA</b>
-              <p>
+            <div class="checkbox checkbox-success">
+              <input type="checkbox" value="0" id="cruzaLinea">
+              <label id="cruza">
+                Escala, Barra
+                  <input type="radio"  id="radio5" value="1" name="barra">
+                  <label> 1 </label>
+                  <input type="radio"  id="radio6" value="2" name="barra">
+                  <label> 2 </label>
+                  <input type="radio"  id="radio7" value="3" name="barra">
+                  <label> 3 </label>
+                  <input type="radio"  id="radio7" value="3" name="barra">
+                  <label> 4 </label>
+              </label>
+            </div>
+        <div class="form-group">
+          <div class="checkbox checkbox-success">
+            <input type="checkbox" value="0" id="cruzaLinea">
+            <label id="cruza">
+              Autónomo, Posición
                 <input type="radio"  id="radio5" value="1" name="barra">
                 <label> 1 </label>
                 <input type="radio"  id="radio6" value="2" name="barra">
                 <label> 2 </label>
                 <input type="radio"  id="radio7" value="3" name="barra">
                 <label> 3 </label>
-                <input type="radio"  id="radio8" value="4" name="barra">
-                <label> 4 </label>
-                </p>
-          </div>
-          <div class="form-group">
-            <b>TIEMPO</b>
-              <p>
-                <input type="radio"  id="radio9" value="1" name="tiempo">
-                <label> 1 (5 - 10)</label>
-                <input type="radio"  id="radio10" value="2" name="tiempo">
-                <label> 2 (10 - 15)</label>
-                <input type="radio"  id="radio11" value="3" name="tiempo">
-                <label> 3 (15 - 20)</label>
-                <input type="radio"  id="radio12" value="4" name="tiempo">
-                <label> 4 (20 - 30)</label>
-                <input type="radio"  id="radio13" value="5" name="tiempo">
-                <label> 5 (30+)</label>
-              </p>
+            </label>
+          </div> 
+      </div>
+      <br>
+        <h4>Datos adicionales</h4>
+        <div class="form-group">
+          <label for="team"><b>Tipo de chasis</b></label>
+          <input type="text" class="form-control" id="team" placeholder="0000">
         </div>
-
-        <h3>Resúmen</h3>
-        <b>FALTAS</b>
-          <div>
-            <button class="btn btn-success" type="button" id="b17">-</button>
-            <b id="resLabel1">0</b>
-            <button class="btn btn-success" type="button" id="b18">+</button>  
-          </div>
-          <br/>
-          <div class="checkbox checkbox-success">
-            <input type="checkbox" value="yes" checked id="alive">
-            <label id="resLabel2"> Vivo </label>
-          </div>  
-          <div class="checkbox checkbox-success">
-            <input type="checkbox" value="yes" id="defense">
-            <label id="resLabel3"> No hace defensa </label>
-          </div>
-          <br>
-          <div class="form-group">
-            <label><b>Comentarios</b></label>
-            <textarea placeholder="¿Es papa?" id="comments"></textarea>
-          </div>
+        <div class="form-group">
+          <label for="team"><b>Tipo de controladores</b></label>
+          <input type="text" class="form-control" id="team" placeholder="0000">
+        </div>
+        <div class="form-group">
+          <label for="team"><b>Lenguaje de prgramación</b></label>
+          <input type="text" class="form-control" id="team" placeholder="0000">
+        </div>
+        <div class="form-group">
+          <label for="team"><b>Intake reversible</b></label>
+          <input type="text" class="form-control" id="team" placeholder="0000">
+        </div>
+        <br>
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="submitBtn">Submit</button>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
-            <h4 class="modal-title" id="myModalLabel">Scouting Data</h4>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+                  <h4 class="modal-title" id="myModalLabel">Scouting Data</h4>
+                </div>
+                <div class="modal-body">
+                  <p id="resName">1</p>
+                  <p id="resMatch">2</p>
+                  <p id="resTeam">3</p>
+                  <p id="resAutoUpper">4</p>
+                  <p id="resFinal">5</p>
+                </div>
+                <div class="modal-footer ">
+                  <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" id="clear">Download Data</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">
-            <p id="resName">1</p>
-            <p id="resMatch">2</p>
-            <p id="resTeam">3</p>
-            <p id="resAutoUpper">4</p>
-            <p id="resFinal">5</p>
-          </div>
-          <div class="modal-footer ">
-            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" id="clear">Download Data</button>
-          </div>
-        </div>
+        </form>   
       </div>
     </div>
-      </form>   
-    </div>
   </div>
- </div>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
@@ -267,8 +194,7 @@ new WOW().init();
 <!-- ADDED SCRIPTS
     ============================================================--> 
 
-<script src="2022FRC/scoutingCode.js"></script>
-<script src="2022FRC/csvCode.js"></script>
+<script></script>
 
 </body>
 </html>
