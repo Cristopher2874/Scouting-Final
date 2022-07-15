@@ -200,6 +200,7 @@ b16.addEventListener('click',add8);
 
 //  EndGame -------------------------------------------------------------------------------------->
 
+let barra0 = document.getElementById('radio5.1');
 let barra1 = document.getElementById('radio5');
 let barra2 = document.getElementById('radio6');
 let barra3 = document.getElementById('radio7');
@@ -207,7 +208,9 @@ let barra4 = document.getElementById('radio8');
 
 let barra = 0;
 
-function bar1(){
+function bar0(){
+    barra = barra0.value;
+}function bar1(){
     barra = barra1.value;
 }function bar2(){
     barra = barra2.value;
@@ -217,6 +220,7 @@ function bar1(){
     barra = barra4.value;
 }
 
+barra0.addEventListener('click',bar0);
 barra1.addEventListener('click',bar1);
 barra2.addEventListener('click',bar2);
 barra3.addEventListener('click',bar3);

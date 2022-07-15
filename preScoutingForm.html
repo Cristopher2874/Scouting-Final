@@ -81,63 +81,68 @@
               <br>
           <h4>Tareas</h4>
           <div class="checkbox checkbox-success">
-            <input type="checkbox" value="0" id="cruzaLinea">
-            <label id="cruza">Recoge del piso</label>
+            <input type="checkbox" value="0" id="recoge">
+            <label id="recogePiso">Recoge del piso</label>
           </div>
           <div class="checkbox checkbox-success">
-            <input type="checkbox" value="0" id="cruzaLinea">
-            <label id="cruza">Dispara arriba</label>
+            <input type="checkbox" value="0" id="arriba">
+            <label id="disparaUp">Dispara arriba</label>
           </div>
           <div class="checkbox checkbox-success">
-            <input type="checkbox" value="0" id="cruzaLinea">
-            <label id="cruza">Dispara abajo</label>
+            <input type="checkbox" value="0" id="abajo">
+            <label id="disparaDown">Dispara abajo</label>
           </div>
           <div class="form-group">
             <div class="checkbox checkbox-success">
-              <input type="checkbox" value="0" id="cruzaLinea">
-              <label id="cruza">
-                Escala, Barra
-                  <input type="radio"  id="radio5" value="1" name="barra">
-                  <label> 1 </label>
-                  <input type="radio"  id="radio6" value="2" name="barra">
-                  <label> 2 </label>
-                  <input type="radio"  id="radio7" value="3" name="barra">
-                  <label> 3 </label>
-                  <input type="radio"  id="radio7" value="3" name="barra">
-                  <label> 4 </label>
-              </label>
+              <input type="checkbox" value="0" id="escala">
+              <label id="barra">Escala, Barra</label>
             </div>
-        <div class="form-group">
-          <div class="checkbox checkbox-success">
-            <input type="checkbox" value="0" id="cruzaLinea">
-            <label id="cruza">
-              Autónomo, Posición
-                <input type="radio"  id="radio5" value="1" name="barra">
+            <div class="form-group">
+              <label><b>Barra</b></label>
+              <p>
+                <input type="radio"  id="radio1" value="1" name="position">
                 <label> 1 </label>
-                <input type="radio"  id="radio6" value="2" name="barra">
+                <input type="radio"  id="radio2" value="2" name="position">
                 <label> 2 </label>
-                <input type="radio"  id="radio7" value="3" name="barra">
+                <input type="radio"  id="radio3" value="3" name="position">
                 <label> 3 </label>
-            </label>
-          </div> 
-      </div>
+                <input type="radio"  id="radio4" value="4" name="position">
+                <label> 4 </label>
+                </p>
+          </div>
+          <div class="form-group">
+            <div class="checkbox checkbox-success">
+              <input type="checkbox" value="0" id="escala">
+              <label id="auto">Autónomo, posición</label>
+            </div>
+            <div class="form-group">
+              <label><b>Starting Position</b></label>
+              <p>
+                <input type="radio"  id="radio5" value="1" name="auto">
+                <label> 1 </label>
+                <input type="radio"  id="radio6" value="2" name="auto">
+                <label> 2 </label>
+                <input type="radio"  id="radio7" value="3" name="auto">
+                <label> 3 </label>
+                </p>
+          </div>
       <br>
         <h4>Datos adicionales</h4>
         <div class="form-group">
           <label for="team"><b>Tipo de chasis</b></label>
-          <input type="text" class="form-control" id="team" placeholder="0000">
+          <input type="text" class="form-control" id="chasis" placeholder="Tanque">
         </div>
         <div class="form-group">
           <label for="team"><b>Tipo de controladores</b></label>
-          <input type="text" class="form-control" id="team" placeholder="0000">
+          <input type="text" class="form-control" id="controlador" placeholder="Spark Max">
         </div>
         <div class="form-group">
           <label for="team"><b>Lenguaje de prgramación</b></label>
-          <input type="text" class="form-control" id="team" placeholder="0000">
+          <input type="text" class="form-control" id="lenguaje" placeholder="Java">
         </div>
         <div class="form-group">
           <label for="team"><b>Intake reversible</b></label>
-          <input type="text" class="form-control" id="team" placeholder="0000">
+          <input type="text" class="form-control" id="intake" placeholder="Sí">
         </div>
         <br>
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="submitBtn">Submit</button>
@@ -146,7 +151,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
-                  <h4 class="modal-title" id="myModalLabel">Scouting Data</h4>
+                  <h4 class="modal-title" id="myModalLabel">Pre Scouting Data</h4>
                 </div>
                 <div class="modal-body">
                   <p id="resName">1</p>
@@ -194,7 +199,8 @@ new WOW().init();
 <!-- ADDED SCRIPTS
     ============================================================--> 
 
-<script></script>
+<script src="2022FRC/preScoutingCode.js"></script>
+<script src="2022FRC/csvPreCode.js"></script>
 
 </body>
 </html>
